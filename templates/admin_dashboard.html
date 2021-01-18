@@ -1,0 +1,81 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}
+Admin_dashboard
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link href="../static/css/dashboard.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">e-portfolio_certificate</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Admin_dashboard<span class="sr-only">(current)</span></a></li>
+            <li><a href="/activity_info">Activity_info</a></li>
+            <li><a href="/verify_list">Verify_list</a></li>
+            <li><a href="/backend">Backend</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Welcome, {{ name }}</h1>
+
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Username</th>
+                  <th>Student_id</th>
+                  <th>ActivityName</th>
+                  <th>Experience</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for user in list_review  %}
+                  <tr>
+                    <td>{{user.id}}</td>
+                    <td>{{user.username</td>
+                    <td>{{user.student_id}}</td>
+                    <td>{{user.ActivityName}}</td>
+                    <td><a href="/review_check_url?student_id={{user.student_id}}&ActivityName={{user.ActivityName}}&Date={{user.Date}}">Link</a></td>
+                    <td>{{user.status}}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>>
+{% endblock %}

@@ -1,0 +1,7 @@
+{"student_id": "10303999A", "username": "apple", password": "Ml7LZh1p$4bc83a0f42fdfb6b7e70db93e7381c78a666d37f2966380920c74d8cdfc8e209", "group": "student"}
+{"student_id": "10303888A", "username": "bee", password": "Ik2uxSgC$d8e28ae936aa5d0d0d22b1f89a1b0eb23c33fa7e20f9ff92c99391788388e268", "group": "teacher"}
+{"student_id": "10303777A", "username": "candy", password": "1Ds5AWqE$47088c0ed7cbd15019dafa6e5a37403dc9b072ab4b11049885e95a847810c8cb", "group": "admin"}
+{"student_id": "10303666A", "username": "danny", password": "YHHEg4MW$4f1bfd91669a91bb79d287d32b27039414ad8ec0852c95aaf403836c39d7c13e", "group": "student"}
+{"student_id": "10303555A", "username": "eve", password": "MvlMMBhe$b8b8315a32dd9772c213b3bfb16399a9fb38443dc22522e77c195dec266b587e", "group": "student"}
+{"student_id": "10303444A", "username": "fox", password": "mB6mQ5g2$002f469a47847c883db54fb264496a91d554813e9f231eecb0bfbf7b448c960d", "group": "student"}
+
